@@ -1,0 +1,98 @@
+{% extends '_base.html' %}
+{% block content %}
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+     <head>
+
+    </head> 
+
+<div class = "Phone-Zone" style="width: 420px; height: 690px; border: 1px solid black; margin: 40px auto 0 auto; position: relative;">
+
+    <h1>Liked Items</h1>
+      <div class="carousel-wrapper">
+        <div class="carousel">
+
+            <img class="carousel__photo initial" src="https://cdn.shopify.com/s/files/1/0267/9232/9325/products/WL956551058-7PQ-1_1800x1800.jpg?v=1630401071">
+    
+            {% for item in likes %}
+                <img class="carousel__photo" src="{{item.image}}">
+            {% endfor %}
+
+          <!-- <img class="carousel__photo" src="https://cdn.shopify.com/s/files/1/0718/5347/products/IMG_1495_720x720.jpg?v=1624549101">
+          <img class="carousel__photo" src="https://cdn.shopify.com/s/files/1/0267/9232/9325/products/ML9779586392-A1WF-1_1800x1800.jpg?v=1624698415">
+          <img class="carousel__photo" src="https://cdn.shopify.com/s/files/1/0267/9232/9325/products/9A0602-023-1_1800x1800.jpg?v=1632217287">
+          <img class="carousel__photo" src="https://images.footlocker.com/is/image/EBFL2/GV8280_a1?wid=2000&hei=2000&fmt=png-alpha">
+          <img class="carousel__photo" src="https://images.footlocker.com/is/image/EBFL2/GX2609_a1?wid=2000&hei=2000&fmt=png-alpha">
+          <img class="carousel__photo" src="https://images.footlocker.com/is/image/EBFL2/U4489015_om1?wid=2000&hei=2000&fmt=png-alpha">
+          <img class="carousel__photo" src="https://cdn.shopify.com/s/files/1/0267/9232/9325/products/LTSNNZ5B-WHT-1_1800x1800.jpg?v=1635413214">
+          <img class="carousel__photo" src="https://cdn.shopify.com/s/files/1/0718/5347/products/A33B9299copy_720x720.jpg?v=1631050953">
+          <img class="carousel__photo" src="https://cdn.shopify.com/s/files/1/0267/9232/9325/products/11941900-ERA-1_1800x1800.jpg?v=1634374596">
+          <img class="carousel__photo" src="https://images.footlocker.com/is/image/EBFL2/U4489015_om1?wid=2000&hei=2000&fmt=png-alpha">
+          <img class="carousel__photo" src="https://s7d2.scene7.com/is/image/aeo/0436_3064_922_of?$pdp-mz-opt$">
+            -->
+          <div class="carousel__button--next"></div>
+          <div class="carousel__button--prev"></div>
+    
+        </div>
+
+          <div class="nav__dots third-current">
+            <div id="dot1" class="dot"></div>
+            <div id="dot2" class="dot"></div>
+            <div id="dot3" class="dot"></div>
+        </div>
+
+      </div>
+      <script src="/static/index.js"></script>
+
+    <hr>
+ <h1>Recent Deals</h1>
+ <!-- <div class = "card-group" > 
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0718/5347/products/IMG_1495_720x720.jpg?v=1624549101" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Nike Sneakers</h5>
+          <p class="card-text"></p>
+        </div>
+    </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0267/9232/9325/products/ML9779586392-A1WF-1_1800x1800.jpg?v=1624698415">
+        <div class="card-body">
+          <h5 class="card-title">Sequin Strapless Column Gown</h5>
+          <p class="card-text"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">CAROLINA HERRERA</li>
+          <li class="list-group-item">$5,490.00</li>
+          <li class="list-group-item">Discounted from $6,000</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Website Link</a>
+          <a href="#" class="card-link">Direct Purchase</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    </div>
+
+-->
+<div class="card-group">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0267/9232/9325/products/ML9779586392-A1WF-1_1800x1800.jpg?v=1624698415" alt="Card image cap" height = "150px">
+        <div class="card-body">
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="https://images.footlocker.com/is/image/EBFL2/U4489015_om1?wid=2000&hei=2000&fmt=png-alpha" alt="Card image cap" height = "150px">
+        <div class="card-body">
+        </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0718/5347/products/IMG_1495_720x720.jpg?v=1624549101" alt="Card image cap" height = "150px">
+      <div class="card-body">
+      </div>
+  </div>
+<!-- </html> -->
+</div>
+{% endblock %}
