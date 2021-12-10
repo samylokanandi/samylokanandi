@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+The Clinder application is deployable live at https://clinder-327421.ue.r.appspot.com
+
+The Tri Sigma website is still in progress 
+
 <!--
 **samylokanandi/samylokanandi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
